@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- include CDN of chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+
+
+<body>
+    <h1>Stock market analysis</h1>
+
+    <div class="show_Peak_Low">
+        <div>
+            <p class="Label">PEAK</p>
+            <p class="peak" id="peak"></p>
+        </div>
+
+        <div>
+            <p class="Label">LOW</p>
+            <p class="low" id="low"></p>
+        </div>
+    </div>
+
+    <main>
+        <div class="lhs">
+            <div id="chartElement">
+                <canvas id="chart" class="chart-section">
+
+                </canvas>
+                <div id="buttonSection-chart">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <ul class="company_profit_lists">
+
+            </ul>
+        </div>
+    </main>
+
+    <section id="company-profile-section">
+        <div id="companyProfile_heading">
+            <span id="company_name"></span>
+            <span id="company_bookValue"></span>
+            <span id="company_profit"></span>
+        </div>
+        <div id="company-summary">
+        </div>
+
+    </section>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
